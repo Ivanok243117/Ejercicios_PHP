@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <title>Gestor de Poemas</title>
 
-  <!-- ✅ Bootstrap 5 desde CDN -->
+  <!--Bootstrap 5 desde CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- ✅ Estilos personalizados -->
+  <!--Estilos personalizados -->
   <style>
     body {
       padding: 30px;
@@ -24,10 +24,10 @@
 <body>
 
   <div class="container">
-    <!-- ✅ Título principal -->
+    <!--Título principal -->
     <h1 class="mb-4 text-center">Gestor de Poemas</h1>
 
-    <!-- ✅ Formulario para agregar poema -->
+    <!--Formulario para agregar poema -->
     <div class="card mb-5">
       <div class="card-header bg-primary text-white">Agregar nuevo poema</div>
       <div class="card-body">
@@ -45,7 +45,7 @@
       </div>
     </div>
 
-    <!-- ✅ Sección de poemas guardados -->
+    <!-- Sección de poemas guardados -->
     <h2 class="mb-4">Poemas guardados</h2>
     <div class="row">
       <?php
@@ -79,7 +79,7 @@
     </div>
   </div>
 
-  <!-- ✅ Bootstrap JS (opcional) -->
+  <!-- Bootstrap JS (opcional) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
