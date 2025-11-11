@@ -111,7 +111,7 @@
     </form>
 
     <form action="main.php" method="post">
-    <button type="submit" name="ejercicio15">Enviar</button>
+    <button type="submit" name="ejercicio15">Imprimir algoritmo</button>
     </form>
 
 </body>
