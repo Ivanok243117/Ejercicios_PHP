@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Formulario de Cliente</title>
@@ -9,21 +10,25 @@
             background-color: #f4f4f4;
             padding: 40px;
         }
+
         form {
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
             max-width: 400px;
             margin: auto;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        input[type="text"], input[type="email"] {
+
+        input[type="text"],
+        input[type="email"] {
             width: 100%;
             padding: 10px;
             margin: 8px 0;
             border-radius: 4px;
             border: 1px solid #ccc;
         }
+
         input[type="submit"] {
             background-color: #28a745;
             color: white;
@@ -33,11 +38,13 @@
             cursor: pointer;
             width: 100%;
         }
+
         input[type="submit"]:hover {
             background-color: #218838;
         }
     </style>
 </head>
+
 <body>
 
     <h2 style="text-align:center;">Registro de Cliente</h2>
@@ -56,4 +63,5 @@
     </form>
 
 </body>
+
 </html>

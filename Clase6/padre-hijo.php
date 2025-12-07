@@ -62,13 +62,13 @@ class Hijo extends Padre {
     <hr>
 
     <?php
-    // Procesar formulario Padre
+    // Procesar Padre
     if (isset($_POST['guardarPadre'])) {
         $padre = new Padre($_POST['ojos'], $_POST['cejas'], $_POST['nariz']);
         $padre->mostrarInformacion();
     }
 
-    // Procesar formulario Hijo
+    // Procesar Hijo
     if (isset($_POST['guardarHijo'])) {
         $hijo = new Hijo($_POST['ojosHijo'], $_POST['cejasHijo'], $_POST['narizHijo'], $_POST['formaCara']);
         $hijo->mostrarInformacion();

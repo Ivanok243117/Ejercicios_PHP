@@ -1,6 +1,6 @@
 <?php
 // Creacion de cookies
-$nombre = setcookie("nombre", 1, time() + (60*2)); // 2 minutos
+$nombre = setcookie("nombre", 1, time() + (60 * 2)); // 2 minutos
 echo $nombre;
 
 // file

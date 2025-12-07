@@ -43,4 +43,3 @@ if (isset($_POST['abrir'])) {
     echo "<br><a href='main.php'>Volver</a>";
     exit;
 }
-?>

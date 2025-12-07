@@ -38,5 +38,3 @@ if ($query) {
         window.location.href = 'interfaz.php';
     </script>";
 }
-?>
-

@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <form action = "main.php" method = "post">
-        <input type="text" placeholder = "ingrese un numero" name = "n1"> >
-        <input type="text" placeholder = "ingrese otro numero" name = "n2">
-        <button type = "submit" name = "ejercicio1">Enviar</button>
+    <form action="main.php" method="post">
+        <input type="text" placeholder="ingrese un numero" name="n1"> >
+        <input type="text" placeholder="ingrese otro numero" name="n2">
+        <button type="submit" name="ejercicio1">Enviar</button>
     </form>
 
     <form action="main.php" method="post">
@@ -67,7 +69,7 @@
         <button type="submit" name="ejercicio7">Enviar</button>
     </form>
 
-        <form action="main.php" method="post">
+    <form action="main.php" method="post">
         <input type="text" placeholder="Digite primer valor numerico" name="numero1">
         <input type="text" placeholder="Digite segundo valor numerico" name="numero2">
         <input type="text" placeholder="Digite tercer valor numerico" name="numero3">
@@ -75,7 +77,7 @@
         <button type="submit" name="ejercicio8">Enviar</button>
     </form>
 
-        <form action="main.php" method="post">
+    <form action="main.php" method="post">
         <input type="text" placeholder="Digite la altura en centimetros" name="alturacm">
         <button type="submit" name="ejercicio9">Enviar</button>
     </form>
@@ -111,8 +113,9 @@
     </form>
 
     <form action="main.php" method="post">
-    <button type="submit" name="ejercicio15">Imprimir algoritmo</button>
+        <button type="submit" name="ejercicio15">Imprimir algoritmo</button>
     </form>
 
 </body>
+
 </html>

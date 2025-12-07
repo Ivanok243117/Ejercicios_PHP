@@ -1,18 +1,18 @@
 <?php
-$ruta = __DIR__ . '/frutas.txt';                           
+$ruta = __DIR__ . '/frutas.txt';
 
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {               
-    $fruta = trim($_POST['fruta'] ?? '');                                                 
-        file_put_contents(                                 
-            $ruta,                                      
-            $fruta . PHP_EOL,                                   
-            FILE_APPEND | LOCK_EX                               
-        );
-        header('Location: ' . $_SERVER['PHP_SELF']);          
-        exit;                                                 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $fruta = trim($_POST['fruta'] ?? '');
+    file_put_contents(
+        $ruta,
+        $fruta . PHP_EOL,
+        FILE_APPEND | LOCK_EX
+    );
+    header('Location: ' . $_SERVER['PHP_SELF']);
+    exit;
 }
-?>                                            
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,11 +23,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 
 <body>
-    <form method="post"> 
-        <input name="fruta" placeholder="Ej: Manzana"> 
-        <button>Guardar</button> 
+    <form method="post">
+        <input name="fruta" placeholder="Ej: Manzana">
+        <button>Guardar</button>
     </form>
 
 </body>
-</html>
 
+</html>

@@ -1,101 +1,105 @@
 
 <?php
-function ejemplos(){
-$nombre = "Juan";
-$edad = 25;
-$altura = 1.75;
-$esEstudiante = true;
+function ejemplos()
+{
+    $nombre = "Juan";
+    $edad = 25;
+    $altura = 1.75;
+    $esEstudiante = true;
 
-echo "<h2>$nombre</h2>";
-echo "br>";
-echo "<h2>$edad</h2>";
-echo $altura . "<br>". $esEstudiante;
-//codigo para leer el tipo de dato
-echo "br>";
-echo gettype(value: $edad);
-var_dump(value: $nombre); //codigo para saber el largo de una cadena
+    echo "<h2>$nombre</h2>";
+    echo "br>";
+    echo "<h2>$edad</h2>";
+    echo $altura . "<br>" . $esEstudiante;
+    //codigo para leer el tipo de dato
+    echo "br>";
+    echo gettype(value: $edad);
+    var_dump(value: $nombre); //codigo para saber el largo de una cadena
 
-//arreglos
-$carros = array("Toyota", "Honda", "Ford");
-print_r($carros);
-var_dump($carros);
+    //arreglos
+    $carros = array("Toyota", "Honda", "Ford");
+    print_r($carros);
+    var_dump($carros);
 
-//objeto
-class Car{
-    public $color;
-    public $modelo;
+    //objeto
+    class Car
+    {
+        public $color;
+        public $modelo;
 
-    public function __construct($color, $modelo){
-        $this->color = $color;
-        $this->modelo = $modelo;
+        public function __construct($color, $modelo)
+        {
+            $this->color = $color;
+            $this->modelo = $modelo;
+        }
+
+        public function mensaje()
+        {
+            return "Mi carro es de color " . $this->color . " y modelo " . $this->modelo;
+        }
     }
 
-    public function mensaje(){
-        return "Mi carro es de color " . $this->color . " y modelo " . $this->modelo;
-    }
-}
+    // instancia de la clase
+    $auto1 = new Car("Rojo", "Toyota");
+    echo $auto1->mensaje();
+    echo "<br>";
+    $auto2 = new Car("amarillo", "Honda");
+    echo $auto2->mensaje();
+    echo "<br>";
 
-// instancia de la clase
-$auto1 = new Car("Rojo","Toyota");
-echo $auto1->mensaje();
-echo "<br>";
-$auto2 = new Car("amarillo","Honda");
-echo $auto2->mensaje();
-echo "<br>";
+    //datos null
+    $variableNula = null;
+    var_dump($variableNula);
+    echo "<br>";
+    //Devuelve la logitud de una cadena
+    $cadena = "Hola Mundo";
 
-//datos null
-$variableNula = null;
-var_dump($variableNula);
-echo "<br>";
-//Devuelve la logitud de una cadena
-$cadena = "Hola Mundo";
+    echo strlen($cadena); // Salida: 10
+    echo "<br>";
 
-echo strlen($cadena); // Salida: 10
-echo "<br>";
+    //contar palabras
 
-//contar palabras
+    $frase = "Hola mundo desde PHP";
+    $numeroPalabras = str_word_count($frase);
 
-$frase = "Hola mundo desde PHP";
-$numeroPalabras = str_word_count($frase);   
+    echo $numeroPalabras; // Salida: 4
+    echo "<br>";
+    //invertir cadena
+    echo strrev("Hola Mundo"); // Salida: odnuM aloH
+    echo "<br>";
+    //buscar cadena
+    echo strpos("Hola Mundo", "Mundo"); // Salida: 5
+    echo "<br>";
+    //reemplazar cadena
+    echo str_replace("Mundo", "PHP", "Hola Mundo"); // Salida: Hola PHP
+    echo "<br>";
 
-echo $numeroPalabras; // Salida: 4
-echo "<br>";
-//invertir cadena
-echo strrev("Hola Mundo"); // Salida: odnuM aloH
-echo "<br>";
-//buscar cadena
-echo strpos("Hola Mundo", "Mundo"); // Salida: 5
-echo "<br>";
-//reemplazar cadena
-echo str_replace("Mundo", "PHP", "Hola Mundo"); // Salida: Hola PHP
-echo "<br>";
+    //convertir a mayusculas
+    echo strtoupper("Hola Mundo"); // Salida: HOLA MUNDO
+    echo "<br>";
+    //convertir a minusculas
+    echo strtolower("HOLA MUNDO"); // Salida: hola mundo
+    echo "<br>";
 
-//convertir a mayusculas
-echo strtoupper("Hola Mundo"); // Salida: HOLA MUNDO
-echo "<br>";
-//convertir a minusculas
-echo strtolower("HOLA MUNDO"); // Salida: hola mundo
-echo "<br>";
-
-//funciones matematicas
-echo rand(1, 100); // Numero aleatorio entre 1 y 100
-echo "<br>";
-echo sqrt(16); // Raiz cuadrada de 16
-echo "<br>";
-echo round(3.6); // Redondea 3.6 a 4
-echo "<br>";
-echo ceil(3.2); // Redondea hacia arriba 3.2 a 4
-echo "<br>";
-echo floor(3.8); // Redondea hacia abajo 3.8 a 3
-echo "<br>";
-echo abs(-10); // Valor absoluto de -10
-echo "<br>";
-echo max(1, 2, 3, 4, 5); // Maximo valor
-echo "<br>";
-echo min(1, 2, 3, 4, 5); // Minimo valor
-echo "<br>";
-echo pow(2, 3); // 2 elevado a la 3
-echo "<br>";
+    //funciones matematicas
+    echo rand(1, 100); // Numero aleatorio entre 1 y 100
+    echo "<br>";
+    echo sqrt(16); // Raiz cuadrada de 16
+    echo "<br>";
+    echo round(3.6); // Redondea 3.6 a 4
+    echo "<br>";
+    echo ceil(3.2); // Redondea hacia arriba 3.2 a 4
+    echo "<br>";
+    echo floor(3.8); // Redondea hacia abajo 3.8 a 3
+    echo "<br>";
+    echo abs(-10); // Valor absoluto de -10
+    echo "<br>";
+    echo max(1, 2, 3, 4, 5); // Maximo valor
+    echo "<br>";
+    echo min(1, 2, 3, 4, 5); // Minimo valor
+    echo "<br>";
+    echo pow(2, 3); // 2 elevado a la 3
+    echo "<br>";
 }
 ejemplos();
 
@@ -104,13 +108,12 @@ ejemplos();
 1.Hacer un algoritmo que pida que se ingrese 2 numeros para sumarlos y dividirlos
 */
 
-if(isset($_POST['ejercicio1'])){
+if (isset($_POST['ejercicio1'])) {
     $num1 = $_POST['n1'];
     $num2 = $_POST['n2'];
 
     echo "La suma es: " . ($num1 + $num2) . "<br>";
-    echo "La division es: " . ($num1/ $num2) . "<br>";
-    
+    echo "La division es: " . ($num1 / $num2) . "<br>";
 }
 /*1. Hacer un algoritmo que pida que se ingrese dos número para sumarlos y un numero 
 por el cual se desea dividir.*/
@@ -212,8 +215,10 @@ if (isset($_POST['ejercicio6'])) {
     $sueldo3 = $_POST['sueldo3'];
 
     // Validación
-    if ($nombre1 !== "" && is_numeric($sueldo1) && $nombre2 !== "" 
-    && is_numeric($sueldo2) && $nombre3 !== "" && is_numeric($sueldo3)) {
+    if (
+        $nombre1 !== "" && is_numeric($sueldo1) && $nombre2 !== ""
+        && is_numeric($sueldo2) && $nombre3 !== "" && is_numeric($sueldo3)
+    ) {
         $nuevoSueldo1 = $sueldo1 * 1.10; // Aumento del 10%
         $nuevoSueldo2 = $sueldo2 * 1.12; // Aumento del 12%
         $nuevoSueldo3 = $sueldo3 * 1.15; // Aumento del 15%
@@ -223,8 +228,7 @@ if (isset($_POST['ejercicio6'])) {
         echo "Empleado: <strong>$nombre3</strong> - Nuevo Sueldo: <strong>$" . number_format($nuevoSueldo3, 2) . "</strong><br>";
     } else {
         echo "Por favor ingrese nombres válidos y sueldos numéricos para los tres empleados.";
-        
-    } 
+    }
 }
 /*7. se lee un numero averiguar el cuadrado.*/
 if (isset($_POST['ejercicio7'])) {
